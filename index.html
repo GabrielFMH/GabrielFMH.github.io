@@ -34,12 +34,40 @@
         .github-info {
             font-size: 1.1em;
             color: #0366d6;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+            background-color: #4DB6E1;
+            color: white;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .button:hover {
+            transform: scale(1.05);
+        }
+        .button img {
+            margin-right: 10px;
+            width: 24px;
+            height: 24px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Gabriel Melendez Huarachi </h1>
+        <h1>Gabriel Melendez Huarachi</h1>
         <p class="subtitle">
             Upcoming Systems Engineer | Web Development | Machine Learning |
             Bilingual | Creative in Finding Solutions
@@ -48,8 +76,23 @@
             Perú · Información de contacto
         </div>
         <div class="github-info">
-            <strong>GithubPage </strong><br>
+            <strong>GithubPage</strong><br>
             12 seguidores · 9 contactos
+        </div>
+
+        <div class="button-container">
+            <a href="https://www.linkedin.com" class="button" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="LinkedIn">
+                Linkedin
+            </a>
+            <a href="#" class="button">
+                <span>👨‍💻</span>
+                Portafolio
+            </a>
+            <a href="https://github.com" class="button" target="_blank">
+                <span>🐱</span>
+                Github
+            </a>
         </div>
     </div>
 </body>
